@@ -153,6 +153,9 @@ function bit_code(sizes, v::Integer)
     return i
 end
 
+"""
+Resets the internal state of an encoder
+"""
 function reset!(x::SimpleEncoder)
     empty!(x.values)
     empty!(x.minCode)
